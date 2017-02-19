@@ -1,0 +1,29 @@
+# vim: sw=4 ts=4
+[user]
+    name = kmsheng
+    email = kmsh3ng@gmail.com
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[push]
+    default = current
+[alias]
+    cm = commit -a
+    st = status
+    co = checkout
+    br = branch
+[core]
+    excludesfile = ~/.gitignore
+    ignorecase = false
+[url "https://"]
+    insteadOf = git://
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22

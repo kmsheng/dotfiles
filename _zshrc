@@ -1,0 +1,92 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="kmsheng"
+#ZSH_THEME="random"
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tmux="tmux -2"
+alias cal-today="cal | grep -w -A4 -B6 $(date +%d)"
+#alias sed=gsed
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+#
+#export PS1='\u\[\033[0m\]@\[\033[0;33m\]\H \[\033[1;34m\]\w\[\033[0m\]$(__git_ps1 "(\[\033[1;32m\]%s\[\033[0m\])") \$ '
+#PS1="${host_prompt} ${jobs_total}${history_total} ${directory_prompt}${error_total}${post_prompt} "
+
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to disable command auto-correction.
+# DISABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+source ~/.git-prompt.sh
+
+# User configuration
+#
+export NODE_PATH="/usr/local/lib/node_modules"
+export MYSQL_PATH="/usr/local/mysql/bin"
+export NPM_PATH="/usr/local/share/npm/bin"
+export ES_PLUGIN_PATH="/usr/local/elasticsearch-2.3.3/plugins"
+export ES_PATH="/usr/local/elasticsearch-2.3.3/bin"
+export PYTHONPATH="/Users/kmsheng/Library/Python/2.7/bin"
+
+export PATH="$PYTHONPATH:$NODE_PATH:$HOME/bin:/usr/local/bin:$MYSQL_PATH:$NPM_PATH:$ES_PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
+
+
+# You may need to manually set your language environment
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH="$PATH" # Add RVM to PATH for scripting
+
+alias docker-pid="sudo docker inspect --format '{{.State.Pid}}'"
+alias docker-ip="sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+export NVM_DIR="/Users/kmsheng/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+alias gsort=sort
+
+alias today="date '+%Y-%m-%d'"
+
+# added by travis gem
+[ -f /Users/kmsheng/.travis/travis.sh ] && source /Users/kmsheng/.travis/travis.sh
