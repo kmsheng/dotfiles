@@ -56,11 +56,13 @@ autocmd BufNewFile,BufRead *.go set filetype=go sw=4 ts=4
 autocmd BufNewFile,BufRead *.js set sw=2 ts=2
 autocmd BufNewFile,BufRead *.php set keywordprg="help" omnifunc=phpcomplete#CompletePHP
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.vue set ft=javascript
 
 "shortcut keys
 map th :tabprev<CR>
 map tl :tabnext<CR>
 map <f9> :Tlist<CR>
+:nnoremap <silent> <F10> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 " set 4 spaces indent for zen coding
 let g:user_zen_settings = {
