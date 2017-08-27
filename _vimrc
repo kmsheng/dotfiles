@@ -3,8 +3,8 @@ call pathogen#runtime_append_all_bundles()
 
 syntax on
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 set backspace=indent,eol,start
@@ -26,6 +26,7 @@ set list
 set listchars=tab:>-,trail:.
 set ambiwidth=double
 set nofoldenable    " disable folding
+set pastetoggle=<F3>
 
 " color schema
 set background=dark
