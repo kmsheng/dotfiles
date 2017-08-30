@@ -27,6 +27,7 @@ set listchars=tab:>-,trail:.
 set ambiwidth=double
 set nofoldenable    " disable folding
 set pastetoggle=<F3>
+set timeoutlen=100
 
 " color schema
 set background=dark
