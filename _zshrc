@@ -69,9 +69,9 @@ export NPM_PATH="/usr/local/share/npm/bin"
 export ES_PLUGIN_PATH="/usr/local/elasticsearch-2.3.3/plugins"
 export ES_PATH="/usr/local/elasticsearch-2.3.3/bin"
 export PYTHONPATH="/Users/kmsheng/Library/Python/2.7/bin"
-export GO_PATH="/usr/local/go/bin"
+export GO_PATH=$(go env GOPATH)
 
-export PATH="$GO_PATH:$PYTHONPATH:$NODE_PATH:$HOME/bin:/usr/local/bin:$MYSQL_PATH:$NPM_PATH:$ES_PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
+export PATH="$GO_PATH/bin:$PYTHONPATH:$NODE_PATH:$HOME/bin:/usr/local/bin:$MYSQL_PATH:$NPM_PATH:$ES_PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
 
 # You may need to manually set your language environment
@@ -91,3 +91,5 @@ alias today="date '+%Y-%m-%d'"
 
 # added by travis gem
 [ -f /Users/kmsheng/.travis/travis.sh ] && source /Users/kmsheng/.travis/travis.sh
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
