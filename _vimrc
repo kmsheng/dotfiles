@@ -54,6 +54,7 @@ autocmd FileType py set omnifunc=pythoncomplete
 autocmd FileType python syntax keyword pythonDecorator True None False self
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType make set noexpandtab
+autocmd FileType sh set noexpandtab
 autocmd BufNewFile,BufRead *.go set filetype=go sw=4 ts=4 noet nolist
 autocmd BufNewFile,BufRead *.js set sw=2 ts=2
 autocmd BufNewFile,BufRead *.php set keywordprg="help" omnifunc=phpcomplete#CompletePHP
