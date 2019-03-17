@@ -1868,7 +1868,7 @@ let s:zen_settings = {
 \            'meta:utf': [{'http-equiv': 'Content-Type'}, {'content': 'text/html;charset=UTF-8'}],
 \            'meta:win': [{'http-equiv': 'Content-Type'}, {'content': 'text/html;charset=Win-1251'}],
 \            'meta:compat': [{'http-equiv': 'X-UA-Compatible'}, {'content': 'IE=7'}],
-\            'style': {'type': 'text/css'},
+\            'style': {},
 \            'script': {},
 \            'script:src': [{'src': ''}],
 \            'img': [{'src': ''}, {'alt': ''}],
