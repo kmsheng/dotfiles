@@ -77,7 +77,6 @@ export PATH="$GO_PATH/bin:$PYTHONPATH:$NODE_PATH:$HOME/bin:/usr/local/bin:$MYSQL
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export PATH="$PATH" # Add RVM to PATH for scripting
 
 alias docker-pid="sudo docker inspect --format '{{.State.Pid}}'"
 alias docker-ip="sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
