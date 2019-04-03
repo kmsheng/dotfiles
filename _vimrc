@@ -74,8 +74,8 @@ let g:user_zen_settings = {
 " ctrl + e to trigger zend-coding
 let g:user_zen_expandabbr_key = '<c-o>'
 
-" javascript libraries syntax
-let g:used_javascript_libs = 'jquery,angularjs,underscore'
+" vim-javascript  syntax
+let g:javascript_plugin_jsdoc = 1
 
 let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:NERDTreeWinSize = 44
