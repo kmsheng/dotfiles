@@ -1,7 +1,7 @@
 # vim: sw=4 ts=4
 [user]
-    name = kmsheng
-    email = kmsh3ng@gmail.com
+	name = kmsheng
+	email = kmsh3ng@gmail.com
 	username = kmsheng
 [color]
     ui = auto
