@@ -2,6 +2,8 @@ call pathogen#runtime_append_all_bundles()
 " call pathogen#helptags()
 
 syntax on
+autocmd Syntax markdown syn match markdownError "\w\@<=\w\@="
+
 set smartindent
 set tabstop=2
 set shiftwidth=2
@@ -85,5 +87,3 @@ let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/dist/*
-
-syn match markdownIgnore "\$x_i\$"
