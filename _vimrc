@@ -74,9 +74,6 @@ let g:user_zen_settings = {
 " ctrl + e to trigger zend-coding
 let g:user_zen_expandabbr_key = '<c-o>'
 
-" javascript libraries syntax
-let g:used_javascript_libs = 'jquery,angularjs,underscore'
-
 let NERDTreeIgnore=['\~$', '\.lo$', '\.la$']
 let g:NERDTreeWinSize = 44
 
@@ -88,9 +85,3 @@ let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/dist/*
-
-autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
-autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
-autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
-autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
-autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
